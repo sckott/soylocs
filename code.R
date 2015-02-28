@@ -6,13 +6,13 @@ library("whisker")
 dat <- read.csv('data.csv', stringsAsFactors = FALSE)
 
 # convert data.frame to geojson
-json <- geojson_json(dat, lat='lat', lon='long')
+# json <- geojson_json(dat, lat='lat', lon='long')
 
 # render map to geojson file
-geojson_write(json, file="soylocs.geojson")
+# geojson_write(json, file="soylocs.geojson")
 
 # make mapbox map
-gbif_photos <- function(x) {
+make_index <- function(x) {
   outfile <- "index.html"
   filepath <- "singlemap.html"
   places <- apply(x, 1, as.list)
@@ -21,3 +21,4 @@ gbif_photos <- function(x) {
   write(rr, file = outfile)
 }
 
+make_index(dat)
