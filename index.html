@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>f*ing soy!</title>
+<meta name="viewport"" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js"></script>
+<link href="https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css" rel="stylesheet"/>
+<link rel="shortcut icon" href="favicon-bullhorn.ico">
+<style>
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+
+<style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#c11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
+<span id="forkongithub"><a href="https://github.com/sckott/soylocs">Fork me on GitHub</a></span>
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoicmVjb2xvZ3kiLCJhIjoiZWlta1B0WSJ9.u4w33vy6kkbvmPyGnObw7A';
+    var map = L.mapbox.map("map", "examples.map-i86nkdio")
+    .setView([45.53, -122.62], 12);
+
+    var myLayer = L.mapbox.featureLayer().addTo(map);
+
+    var geoJson = [
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6406, 45.50471 ]},
+          "properties": {
+              "place": "Reel M Inn",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6430, 45.51220 ]},
+          "properties": {
+              "place": "Hawthorne Hideaway",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6325, 45.50484 ]},
+          "properties": {
+              "place": "Richmond Bar",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6459, 45.51235 ]},
+          "properties": {
+              "place": "Bombay Cricket Club",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6731, 45.52267 ]},
+          "properties": {
+              "place": "Voodoo Doughnuts",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6826, 45.51998 ]},
+          "properties": {
+              "place": "Habibi",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6399, 45.51657 ]},
+          "properties": {
+              "place": "Rocking Frog",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6183, 45.51657 ]},
+          "properties": {
+              "place": "Sushi PDX",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6440, 45.50471 ]},
+          "properties": {
+              "place": "Sushi Mazi",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6367, 45.55914 ]},
+          "properties": {
+              "place": "Tonnalli’s Donuts and Cream",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6811, 45.52119 ]},
+          "properties": {
+              "place": "Kargi Gogo",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6108, 45.50475 ]},
+          "properties": {
+              "place": "Bete Lukas",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6364, 45.52616 ]},
+          "properties": {
+              "place": "Migration Brewing",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6215, 45.51190 ]},
+          "properties": {
+              "place": "Dwaraka Indian Cuisine",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6513, 45.53444 ]},
+          "properties": {
+              "place": "Namaste Indian Cuisine",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6180, 45.51647 ]},
+          "properties": {
+              "place": "Namu",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.5891, 45.54802 ]},
+          "properties": {
+              "place": "Annie's Donuts",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6603, 45.52248 ]},
+          "properties": {
+              "place": "Delicious Donuts",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6138, 45.54842 ]},
+          "properties": {
+              "place": "Pips Donuts",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6861, 45.57727 ]},
+          "properties": {
+              "place": "Heavenly Donuts",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6132, 45.51915 ]},
+          "properties": {
+              "place": "Silvalai Thai",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6030, 45.54268 ]},
+          "properties": {
+              "place": "Thai Seasons",
+              "marker-symbol": "restaurant"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.6286, 45.53535 ]},
+          "properties": {
+              "place": "Full Moon Thai",
+              "marker-symbol": "restaurant"
+          }
+      },
+    ];
+
+    myLayer.on("layeradd", function(e) {
+      var marker = e.layer,
+      feature = marker.feature;
+
+    var popupContent =  feature.properties.place;
+
+    marker.bindPopup(popupContent,{
+          closeButton: false,
+          minWidth: 200
+        });
+    });
+
+    myLayer.setGeoJSON(geoJson);
+  </script>
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '54f1f3c55dd05356170117f8');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+</body>
+</html>
