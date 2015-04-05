@@ -77,7 +77,8 @@ body { margin:0; padding:0; }
           "properties": {
               "place": "{{place}}",
               "marker-symbol": "restaurant",
-              "nosoy": {{nosoy}}
+              "nosoy": {{nosoy}},
+              "url": "{{url}}"
           }
       },
       {{/places}}
@@ -91,8 +92,8 @@ body { margin:0; padding:0; }
       var marker = e.layer,
       feature = marker.feature;
 
-      var popupContent = '<h2>Place: ' + feature.properties.place + '<br \/>' +
-        'URL: ' + '<a>'feature.properties.url' + '<\/h2>';
+      var popupContent = '<h2>' + feature.properties.place + '<br \/>' +
+        '<a href="' + feature.properties.url + '" target="_blank">link<\/a>' + '<\/h2>';
 
       marker.bindPopup(popupContent,{
         closeButton: false,
