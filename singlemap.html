@@ -12,46 +12,102 @@ body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
 
-<style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#c11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
-<span id="forkongithub"><a href="https://github.com/sckott/soylocs">Fork me on GitHub</a></span>
+<style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#c11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;left:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;left:-60px;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/sckott/soylocs">Fork me on GitHub</a></span>
 </head>
 <body>
+
+<style>
+.menu-ui {
+  background:#fff;
+  position:absolute;
+  top:10px;right:10px;
+  z-index:1;
+  border-radius:3px;
+  width:120px;
+  border:1px solid rgba(0,0,0,0.4);
+  }
+  .menu-ui a {
+    font-size:13px;
+    color:#404040;
+    display:block;
+    margin:0;padding:0;
+    padding:10px;
+    text-decoration:none;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+    text-align:center;
+    }
+    .menu-ui a:first-child {
+      border-radius:3px 3px 0 0;
+      }
+    .menu-ui a:last-child {
+      border:none;
+      border-radius:0 0 3px 3px;
+      }
+    .menu-ui a:hover {
+      background:#f8f8f8;
+      color:#404040;
+      }
+    .menu-ui a.active,
+    .menu-ui a.active:hover {
+      background:#3887BE;
+      color:#FFF;
+      }
+</style>
+
+<!-- jQuery is required for this example. -->
+<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+
+<nav class='menu-ui'>
+  <a href='#' class='active' data-filter='all'>Show all</a>
+  <a href='#' data-filter='nosoy'>No Soy</a>
+</nav>
 
   <div id="map"></div>
 
   <script>
-  L.mapbox.accessToken = 'pk.eyJ1IjoicmVjb2xvZ3kiLCJhIjoiZWlta1B0WSJ9.u4w33vy6kkbvmPyGnObw7A';
-    var map = L.mapbox.map("map", "examples.map-i86nkdio")
-    .setView([45.53, -122.62], 12);
+    L.mapbox.accessToken = 'pk.eyJ1IjoicmVjb2xvZ3kiLCJhIjoiZWlta1B0WSJ9.u4w33vy6kkbvmPyGnObw7A';
+      var map = L.mapbox.map("map", "examples.map-i86nkdio")
+      .setView([45.53, -122.62], 12);
 
-    var myLayer = L.mapbox.featureLayer().addTo(map);
-
-    var geoJson = [
+    var geojson = [
       {{#places}}
       {
         type: "Feature",
           "geometry": { "type": "Point", "coordinates": [ {{long}}, {{lat}} ]},
           "properties": {
               "place": "{{place}}",
-              "marker-symbol": "restaurant"
+              "marker-symbol": "restaurant",
+              "nosoy": {{nosoy}}
           }
       },
       {{/places}}
     ];
 
-    myLayer.on("layeradd", function(e) {
+    var markers = L.mapbox.featureLayer()
+      .setGeoJSON(geojson)
+      .addTo(map);
+
+    markers.on("layeradd", function(e) {
       var marker = e.layer,
       feature = marker.feature;
 
-    var popupContent =  feature.properties.place;
+      var popupContent = '<h2>Place: ' + feature.properties.place + '<br \/>' +
+        'URL: ' + '<a>'feature.properties.url' + '<\/h2>';
 
-    marker.bindPopup(popupContent,{
-          closeButton: false,
-          minWidth: 200
-        });
+      marker.bindPopup(popupContent,{
+        closeButton: false,
+        minWidth: 200
+      });
     });
 
-    myLayer.setGeoJSON(geoJson);
+    $('.menu-ui a').on('click', function() {
+      var filter = $(this).data('filter');
+      $(this).addClass('active').siblings().removeClass('active');
+      markers.setFilter(function(f) {
+          return (filter === 'all') ? true : f.properties[filter] === true;
+      });
+      return false;
+    });
   </script>
 
 <script type="text/javascript">
