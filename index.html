@@ -7,6 +7,7 @@
 <script src="https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js"></script>
 <link href="https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css" rel="stylesheet"/>
 <link rel="shortcut icon" href="favicon-bullhorn.ico">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <style>
 body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -661,7 +662,8 @@ body { margin:0; padding:0; }
 
       var popupContent = '<h2>' + feature.properties.place + '<br \/>' +
         'Notes: ' + feature.properties.notes + '<br \/>' +
-        '<a href="' + feature.properties.url + '" target="_blank">link<\/a>' + '<\/h2>';
+        '<a href="' + feature.properties.url + '" target="_blank"><i class="fa fa-home"><\/i><\/a>' +
+        '<a href="' + feature.properties.url + '" target="_blank"><i class="fa fa-list"><\/i><\/a>' + '<\/h2>';
 
       marker.bindPopup(popupContent,{
         closeButton: false,
