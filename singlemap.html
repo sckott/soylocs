@@ -54,7 +54,6 @@ body { margin:0; padding:0; }
       }
 </style>
 
-<!-- jQuery is required for this example. -->
 <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
 
 <nav class='menu-ui'>
@@ -77,8 +76,10 @@ body { margin:0; padding:0; }
           "properties": {
               "place": "{{place}}",
               "marker-symbol": "restaurant",
+              "marker-color": "{{marker_color}}",
               "nosoy": {{nosoy}},
-              "url": "{{url}}"
+              "url": "{{url}}",
+              "notes": "{{notes}}"
           }
       },
       {{/places}}
@@ -88,11 +89,28 @@ body { margin:0; padding:0; }
       .setGeoJSON(geojson)
       .addTo(map);
 
+    L.mapbox.featureLayer({
+      type: 'Feature',
+      geometry: {
+          type: 'Point',
+          coordinates: [
+            -122.636303,
+            45.502844
+          ]
+      },
+      properties: {
+          'marker-size': 'small',
+          'marker-color': '#262B2E',
+          'marker-symbol': 'heart'
+      }
+    }).addTo(map);
+
     markers.on("layeradd", function(e) {
       var marker = e.layer,
       feature = marker.feature;
 
       var popupContent = '<h2>' + feature.properties.place + '<br \/>' +
+        'Notes: ' + feature.properties.notes + '<br \/>' +
         '<a href="' + feature.properties.url + '" target="_blank">link<\/a>' + '<\/h2>';
 
       marker.bindPopup(popupContent,{
