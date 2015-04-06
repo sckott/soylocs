@@ -80,6 +80,7 @@ body { margin:0; padding:0; }
               "marker-color": "{{marker_color}}",
               "nosoy": {{nosoy}},
               "url": "{{url}}",
+              "menu": "{{menu}}",
               "notes": "{{notes}}"
           }
       },
@@ -113,7 +114,7 @@ body { margin:0; padding:0; }
       var popupContent = '<h2>' + feature.properties.place + '<br \/>' +
         'Notes: ' + feature.properties.notes + '<br \/>' +
         '<a href="' + feature.properties.url + '" target="_blank"><i class="fa fa-home"><\/i><\/a>' + '&nbsp;&nbsp;' +
-        '<a href="' + feature.properties.url + '" target="_blank"><i class="fa fa-list"><\/i><\/a>' + '<\/h2>';
+        '<a href="' + feature.properties.menu + '" target="_blank"><i class="fa fa-list"><\/i><\/a>' + '<\/h2>';
 
       marker.bindPopup(popupContent,{
         closeButton: false,
