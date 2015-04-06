@@ -141,10 +141,10 @@ body { margin:0; padding:0; }
           "properties": {
               "place": "Habibi",
               "marker-symbol": "restaurant",
-              "marker-color": "null#5B72AF",
+              "marker-color": "#5B72AF",
               "nosoy": false,
               "url": "null",
-              "menu": "",
+              "menu": "null",
               "notes": "null"
           }
       },
@@ -710,7 +710,8 @@ body { margin:0; padding:0; }
       var popupContent = '<h2>' + feature.properties.place + '<br \/>' +
         'Notes: ' + feature.properties.notes + '<br \/>' +
         '<a href="' + feature.properties.url + '" target="_blank"><i class="fa fa-home"><\/i><\/a>' + '&nbsp;&nbsp;' +
-        '<a href="' + feature.properties.menu + '" target="_blank"><i class="fa fa-list"><\/i><\/a>' + '<\/h2>';
+        '<a href="' + feature.properties.menu + '" target="_blank"><i class="fa fa-list"><\/i><\/a>' + '&nbsp;&nbsp;' +
+        '<a href="https://github.com/sckott/soylocs/issues/new" target="_blank"><i class="fa fa-bug"><\/i><\/a>' + '<\/h2>';
 
       marker.bindPopup(popupContent,{
         closeButton: false,
