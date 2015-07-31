@@ -1272,22 +1272,6 @@ body { margin:0; padding:0; }
       .setGeoJSON(geojson)
       .addTo(map);
 
-    L.mapbox.featureLayer({
-      type: 'Feature',
-      geometry: {
-          type: 'Point',
-          coordinates: [
-            -122.636303,
-            45.502844
-          ]
-      },
-      properties: {
-          'marker-size': 'small',
-          'marker-color': '#262B2E',
-          'marker-symbol': 'heart'
-      }
-    }).addTo(map);
-
     markers.on("layeradd", function(e) {
       var marker = e.layer,
       feature = marker.feature;
