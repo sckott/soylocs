@@ -161,7 +161,7 @@
 "Kala Noodle and Grill","2016-02-02",45.516245,-122.639316,"false","salad oil, probably soybean","null","null","#5B72AF","restaurant"
 "Thai Dish","2016-02-02",45.511879,-122.614884,"false","vegetable oil","null","null","#5B72AF","restaurant"
 "Cibo","2016-02-02",45.504898,-122.627757,"true","mostly olive but ask about specifics, pizza is okay for oil","null","null","#52E27E","restaurant"
-"Grassa","2016-02-02",45.522021,-122.683567,"true","olive in sautee/dressings, canola in fryer","null","null","#52E27E","restaurant"
+"Grassa","2016-02-02",45.522021,-122.683567,"true","olive in sautee/dressings, canola in fryer","http://grassapdx.com/","http://grassapdx.com/menu","#52E27E","restaurant"
 "Midpoint Food and Drink","2016-02-02",45.497048,-122.608633,"true","they cook in canola, and they know the WW bread ingredients but not hamburger and hot dog buns","null","null","#52E27E","restaurant"
 "Stammtisch","2016-02-02",45.525838,-122.637447,"true","uses canola for frying (double check specifics if we go in)","null","null","#52E27E","restaurant"
 "Authentic Thai","2016-02-02",45.504883,-122.623613,"true","soybean for deep fry, canola for stir fry","null","null","#52E27E","restaurant"
@@ -178,3 +178,4 @@
 "Accanto","2016-02-02",45.516272,-122.636333,"true","olive oil, but fryer is soy","http://accantopdx.com/","http://accantopdx.com/dinner/","#52E27E","restaurant"
 "MeKha Grill","2016-02-02",45.505190,-122.611651,"true","uses canola","http://www.mekharestaurants.com/","http://www.mekharestaurants.com/#!mekha-noodles/cvx2","#52E27E","restaurant"
 "Tao of Tea","2016-02-02",45.516233,-122.628712,"true","canola olive blend, and then some stuff is packaged but they know the ingredients, so I would just need to ask","http://taooftea.com/","null","#52E27E","restaurant"
+"Pfriem","2016-02-18",45.714714,-121.517815,"true","uses rice bran oil, most things made in house, but those that they don't they have ingredient info for","http://www.pfriembeer.com/","http://www.pfriembeer.com/docs/menu.pdf","#52E27E","restaurant"
