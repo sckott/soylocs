@@ -366,13 +366,3 @@
 "Cheryl's on 12th","2018-01-16",45.521994,-122.683214,"false","Only safe sandwich is caprese (bread is palm oil, pesto is canola oil)","http://www.cherylson12th.com/home","http://www.cherylson12th.com/home","#5B72AF","restaurant"
 "Villa Italian Kitchen","2017-10-14",45.516257,-122.674783,"false","catering: Dough, sauce, dressing, etc. contains soybean oil","null","null","#5B72AF","restaurant"
 "Laughing Planet","2018-01-16",39.537236,-119.816796,"true","Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown","https://laughingplanetcafe.com","https://laughingplanetcafe.com/menu/","#52E27E","restaurant"
-
-# templates
-## good
-"xx","2018-01-04",45.519110,-122.583067,"true","notes","url","menu","#52E27E","restaurant"
-"xx","2018-01-04",45.519110,-122.583067,"true","notes","url","menu","#52E27E","restaurant"
-
-## bad
-"xx","2017-10-14",45.505433,-122.611411,"false","Uses soybean oil","url","menu","#5B72AF","restaurant"
-"xx","2017-10-14",45.505433,-122.611411,"false","Uses soybean oil","url","menu","#5B72AF","restaurant"
-
