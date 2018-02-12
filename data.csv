@@ -270,7 +270,7 @@
 "Tott Asian Grill","2017-04-20",39.710469,-105.100998,"false","Uses soybean oil","http://www.tottasiangrilllakewoodco.com/","http://www.tottasiangrilllakewoodco.com/","#5B72AF","restaurant"
 "Himalaya House","2017-04-20",39.727100,-105.129429,"false","Uses soybean oil","http://www.himalaya-house.com/","http://www.himalaya-house.com/","#5B72AF","restaurant"
 "Ranch Pizza","2017-04-19",45.505090,-122.652863,"true","okay, no soybean oil","https://www.ranchpdx.com/","https://www.ranchpdx.com/menu-1/","#52E27E","restaurant"
-"La Cocina Restaurant","2017-05-05",45.551347,-122.661808,"true","they make their own flour tortillas I think but need to confirm this - in call on 2017-05-05 they said they use olive oil - need to get confirmation on the oil if they deep fry","http://www.lacocinarestaurantpdx.com/","http://www.lacocinarestaurantpdx.com/","#52E27E","restaurant"
+"La Cocina Restaurant","2017-11-25",45.551347,-122.661808,"true","they make their own flour tortillas I think but need to confirm this - in call on 2017-05-05 they said they use olive oil - need to get confirmation on the oil if they deep fry. Update 2017-11-25: Olive oil for sautee and in empanada dough, canola to deep fry. Still haven't asked about flour tortillas.","http://www.lacocinarestaurantpdx.com/","http://www.lacocinarestaurantpdx.com/","#52E27E","restaurant"
 "Green Leaf Sushi","2017-05-15",49.264122,-123.180173,"true","Everything is okay, including mayo","https://www.yelp.com/biz/green-leaf-sushi-vancouver","https://www.yelp.com/biz/green-leaf-sushi-vancouver","#52E27E","restaurant"
 "The Oakwood Canadian Bistro","2017-05-15",49.268518,-123.167096,"true","Cooking oil is fine (saute, fry) and they make their own white bread that is fine as well.","http://www.theoakwood.ca/","http://www.theoakwood.ca/new-page/","#52E27E","restaurant"
 "Curry 2U","2017-05-15",49.272778,-123.135137,"true","Cooking oil is fine and everything in the veggie samosa chaat is fine. They buy their naan and I need to check ingredients.","http://curry2you.com/","http://curry2you.com/","#52E27E","restaurant"
@@ -350,3 +350,29 @@
 "Year of the Fish","2017-11-12",45.495879,-122.608774,"true","Fries in canola oil. Haven't asked about tartar sauce.","http://yearofthefish.letseat.at/","http://yearofthefish.letseat.at/","#52E27E","bus"
 "Kenton Station","2017-11-12",45.583181,-122.687087,"true","Fries in canola, sautees in butter, haven't asked about bread, mayo, or dressings.","http://www.kentonstationportland.com/","http://www.kentonstationportland.com/menus/","#52E27E","restaurant"
 "Crux Fermentation Project","2017-10-25",44.050722,-121.307803,"false","use canola oil, but 'cross contaminated with soy oil'","https://www.cruxfermentation.com/","https://www.cruxfermentation.com/menu/","#5B72AF","restaurant"
+"Flying Pie Pizzeria","2017-12-04",45.519110,-122.583067,"true","Oil in crust and sauce is a blend of canola and olive, haven't asked about anything else (e.g. salad dressing)","https://www.flying-pie.com/","https://www.flying-pie.com/locations/portland/#menu","#52E27E","restaurant"
+"Flying Pie Pizzeria","2017-12-04",45.508928,-122.430419,"true","Oil in crust and sauce is a blend of canola and olive, haven't asked about anything else (e.g. salad dressing)","https://www.flying-pie.com/","https://www.flying-pie.com/locations/gresham/#menu","#52E27E","restaurant"
+"Flying Pie Pizzeria","2017-12-04",45.582916,-122.724697,"true","Oil in crust and sauce is a blend of canola and olive, haven't asked about anything else (e.g. salad dressing)","https://www.flying-pie.com/","https://www.flying-pie.com/locations/north-portland/#menu","#52E27E","restaurant"
+"Flying Pie Pizzeria","2017-12-04",45.433669,-122.702702,"true","Oil in crust and sauce is a blend of canola and olive, haven't asked about anything else (e.g. salad dressing)","https://www.flying-pie.com/","https://www.flying-pie.com/locations/lake-oswego/#menu","#52E27E","restaurant"
+"Flying Pie Pizzeria","2017-12-04",45.402248,-122.621766,"true","Oil in crust and sauce is a blend of canola and olive, haven't asked about anything else (e.g. salad dressing)","https://www.flying-pie.com/","https://www.flying-pie.com/locations/milwaukie/#menu","#52E27E","restaurant"
+"Solstice Wood Fire Pizza","2017-12-21",45.714720,-121.515932,"true","Peanut oil fryer; No oil in dough; Olive oil on top of pizza; Olive oil for sautee - seems odd, but have heard that elsewhere, may want to check in case anything sauteed on chosen thing","http://solsticewoodfirecafe.com/","http://solsticewoodfirecafe.com/food","#52E27E","restaurant"
+"Fat Heads Brewery","2018-01-01",45.524183,-122.684561,"false","Uses soybean oil","http://fatheadsportland.com/","http://fatheadsportland.com/menu.html","#5B72AF","restaurant"
+"Boke Dokie","2018-01-01",45.517055,-122.675458,"true","Cooking oil is canola, haven't asked about buns","https://www.bokedokie.com/","https://www.bokedokie.com/","#52E27E","restaurant"
+"Boke Dokie","2018-01-01",45.511915,-122.625980,"true","Cooking oil is canola, haven't asked about buns","https://www.bokedokie.com/","https://www.bokedokie.com/","#52E27E","restaurant"
+"Virtuous Pie","2017-12-04",45.504556,-122.653985,"true","All ice cream is soy free. No soybean oil in pizza dough or salad dressings. Some menu items contain soy, e.g. caramelized onions are sauteed in Earth Balance (contains soybean oil). They have a binder of all menu items and can verify ingredients.","https://virtuouspie.com/locations/portland/hosford-abernethy/","https://virtuouspie.com/locations/portland/hosford-abernethy/","#52E27E","restaurant"
+"Sprouts","2018-01-11",38.942221,-119.977711,"true","Cooking oil okay, spinach and wheat tortillas are fine, tortilla chips are fine - detailed ingredients available at the register","http://www.sproutscafetahoe.com/","http://www.sproutscafetahoe.com/menu","#52E27E","restaurant"
+"Alpina Cafe","2018-01-11",38.917289,-120.010437,"false","Uses soybean oil in baked goods, presumably all cooking.","https://www.alpinacoffeecafe.com/","https://www.alpinacoffeecafe.com/menu/","#5B72AF","restaurant"
+"Lake Tahoe Aleworx","2018-01-16",38.913325,-120.002346,"true","All dressing, pizza dough, etc. is olive oil. Didn't ask about mayo","http://www.laketahoealeworx.com/about/","http://www.laketahoealeworx.com/menu/","#52E27E","restaurant"
+"Cheryl's on 12th","2018-01-16",45.521994,-122.683214,"false","Only safe sandwich is caprese (bread is palm oil, pesto is canola oil)","http://www.cherylson12th.com/home","http://www.cherylson12th.com/home","#5B72AF","restaurant"
+"Villa Italian Kitchen","2017-10-14",45.516257,-122.674783,"false","catering: Dough, sauce, dressing, etc. contains soybean oil","null","null","#5B72AF","restaurant"
+"Laughing Planet","2018-01-16",39.537236,-119.816796,"true","Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown","https://laughingplanetcafe.com","https://laughingplanetcafe.com/menu/","#52E27E","restaurant"
+
+# templates
+## good
+"xx","2018-01-04",45.519110,-122.583067,"true","notes","url","menu","#52E27E","restaurant"
+"xx","2018-01-04",45.519110,-122.583067,"true","notes","url","menu","#52E27E","restaurant"
+
+## bad
+"xx","2017-10-14",45.505433,-122.611411,"false","Uses soybean oil","url","menu","#5B72AF","restaurant"
+"xx","2017-10-14",45.505433,-122.611411,"false","Uses soybean oil","url","menu","#5B72AF","restaurant"
+
