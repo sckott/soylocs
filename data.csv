@@ -264,7 +264,7 @@
 "Drina Daisy","2017-03-19",46.188935,-123.833480,"false","all soybean oil","http://www.drinadaisy.com/","http://www.drinadaisy.com/","#5B72AF","restaurant"
 "BowPicker","2017-03-17",46.188790,-123.824657,"false","soy based vegetable oil","http://www.bowpicker.com/","http://www.bowpicker.com/","#5B72AF","bus"
 "Home Baking Co","2017-03-16",46.189557,-123.812432,"false","Uses a blend of butter and shortening (which contains soybean oil) in everything","https://www.yelp.com/biz/home-baking-co-astoria-2","https://www.yelp.com/biz/home-baking-co-astoria-2","#5B72AF","restaurant"
-"Buoy Brewing","2017-03-14",46.191330,-123.835072,"true","fry: rice oil; sautee: olive oil; gluten free bread no soy, Fressen bread has no soy. Ciabatta is almost always fine","https://www.buoybeer.com/","https://www.buoybeer.com/the-food/","#52E27E","restaurant"
+"Buoy Brewing","2017-03-14",46.191330,-123.835072,"true","fry: rice oil; sautee: olive oil; gluten free bread no soy, Fressen bread has no soy. Ciabatta is almost always fine; Avoid mayo","https://www.buoybeer.com/","https://www.buoybeer.com/the-food/","#52E27E","restaurant"
 "Tiffin Asha","2017-04-22",45.562702,-122.648294,"true","Only use coconut oil, rice bran oil, and sesame oil","http://tiffinasha.com/","http://tiffinasha.com/menu/","#52E27E","restaurant"
 "Henry's Tavern","2017-04-20",39.744175,-104.991272,"true","Uses a canola/olive oil blend. This is probably for saute (not fry) so ask again when there. Same menu as Portland so I would think pizza is okay here too.","http://www.henrystavern.com/index.php?c=denver","http://www.henrystavern.com/menu.php?c=denver","#52E27E","restaurant"
 "Tott Asian Grill","2017-04-20",39.710469,-105.100998,"false","Uses soybean oil","http://www.tottasiangrilllakewoodco.com/","http://www.tottasiangrilllakewoodco.com/","#5B72AF","restaurant"
@@ -416,3 +416,7 @@
 "Donut Land","2018-04-02",45.380020,-122.763904,"false","Fries in soybean oil","null","null","#5B72AF","heart"
 "Rocking Frog","2018-04-02",45.516703,-122.639846,"false","Fries in soybean oil","null","null","#5B72AF","heart"
 "Saucebox","2018-04-02",45.522444,-122.677789,"true","they use peanut oil for everything","http://www.saucebox.com/","http://www.saucebox.com/dinner/","#52E27E","restaurant"
+"Colorado Plus","2018-09-27",39.769757,-105.074168,"true","Cooking oil is canola, bread products are all in house (with canola), dressings I need to be careful (tarragon vinaigrette is fine), avoid mayo","http://www.coloradoplus.net/","http://www.coloradoplus.net/","#52E27E","restaurant"
+
+
+
