@@ -4,8 +4,8 @@
 <meta charset=utf-8 />
 <title>f*ing soy!</title>
 <meta name="viewport"" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-<script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js"></script>
-<link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" />
+<script src="https://api.tiles.mapbox.com/mapbox.js/v3.1.1/mapbox.js"></script>
+<link href="https://api.tiles.mapbox.com/mapbox.js/v3.1.1/mapbox.css" rel="stylesheet" />
 <link rel="shortcut icon" href="favicon-bullhorn.ico">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
@@ -18,15 +18,15 @@ body { margin:0; padding:0; }
 <body>
 
 <style>
-.menu-ui {
-  background:#fff;
-  position:absolute;
-  top:10px;right:10px;
-  z-index:1;
-  border-radius:3px;
-  width:120px;
-  border:1px solid rgba(0,0,0,0.4);
-  }
+  .menu-ui {
+    background:#fff;
+    position:absolute;
+    top:10px;right:10px;
+    z-index:1;
+    border-radius:3px;
+    width:120px;
+    border:1px solid rgba(0,0,0,0.4);
+    }
   .menu-ui a {
     font-size:13px;
     color:#404040;
@@ -36,23 +36,30 @@ body { margin:0; padding:0; }
     text-decoration:none;
     border-bottom:1px solid rgba(0,0,0,0.25);
     text-align:center;
+  }
+  .menu-ui a:first-child {
+    border-radius:3px 3px 0 0;
     }
-    .menu-ui a:first-child {
-      border-radius:3px 3px 0 0;
-      }
-    .menu-ui a:last-child {
-      border:none;
-      border-radius:0 0 3px 3px;
-      }
-    .menu-ui a:hover {
-      background:#f8f8f8;
-      color:#404040;
-      }
-    .menu-ui a.active,
-    .menu-ui a.active:hover {
-      background:#3887BE;
-      color:#FFF;
-      }
+  .menu-ui a:last-child {
+    border:none;
+    border-radius:0 0 3px 3px;
+    }
+  .menu-ui a:hover {
+    background:#f8f8f8;
+    color:#404040;
+    }
+  .menu-ui a.active,
+  .menu-ui a.active:hover {
+    background:#3887BE;
+    color:#FFF;
+    }
+  .search-ui {
+    position:absolute;
+    top:100px;
+    right:10px;
+    z-index:1000;
+    }
+
 </style>
 
 <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
@@ -63,6 +70,7 @@ body { margin:0; padding:0; }
 </nav>
 
   <div id="map"></div>
+  <input id='search' class='search-ui' placeholder='Restaurant name ' />
 
   <script>
     L.mapbox.accessToken = 'pk.eyJ1IjoicmVjb2xvZ3kiLCJhIjoiZWlta1B0WSJ9.u4w33vy6kkbvmPyGnObw7A';
@@ -86,6 +94,8 @@ body { margin:0; padding:0; }
       },
       {{/places}}
     ];
+
+    $('#search').keyup(search);
 
     var markers = L.mapbox.featureLayer()
       .setGeoJSON(geojson)
@@ -115,6 +125,17 @@ body { margin:0; padding:0; }
       });
       return false;
     });
+
+    function search() {
+      // get the value of the search input field
+      var searchString = $('#search').val().toLowerCase();
+      markers.setFilter(showPlace);
+      function showPlace(feature) {
+        return feature.properties.place
+          .toLowerCase()
+          .indexOf(searchString) !== -1;
+      }
+    }
   </script>
 
 <script>

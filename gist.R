@@ -1,2 +1,2 @@
 # create gist
-gist_create(files = "index.geojson")
+gist_create(files = "soylocs.geojson")

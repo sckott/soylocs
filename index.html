@@ -4,8 +4,8 @@
 <meta charset=utf-8 />
 <title>f*ing soy!</title>
 <meta name="viewport"" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-<script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js"></script>
-<link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" />
+<script src="https://api.tiles.mapbox.com/mapbox.js/v3.1.1/mapbox.js"></script>
+<link href="https://api.tiles.mapbox.com/mapbox.js/v3.1.1/mapbox.css" rel="stylesheet" />
 <link rel="shortcut icon" href="favicon-bullhorn.ico">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
@@ -18,15 +18,15 @@ body { margin:0; padding:0; }
 <body>
 
 <style>
-.menu-ui {
-  background:#fff;
-  position:absolute;
-  top:10px;right:10px;
-  z-index:1;
-  border-radius:3px;
-  width:120px;
-  border:1px solid rgba(0,0,0,0.4);
-  }
+  .menu-ui {
+    background:#fff;
+    position:absolute;
+    top:10px;right:10px;
+    z-index:1;
+    border-radius:3px;
+    width:120px;
+    border:1px solid rgba(0,0,0,0.4);
+    }
   .menu-ui a {
     font-size:13px;
     color:#404040;
@@ -36,23 +36,30 @@ body { margin:0; padding:0; }
     text-decoration:none;
     border-bottom:1px solid rgba(0,0,0,0.25);
     text-align:center;
+  }
+  .menu-ui a:first-child {
+    border-radius:3px 3px 0 0;
     }
-    .menu-ui a:first-child {
-      border-radius:3px 3px 0 0;
-      }
-    .menu-ui a:last-child {
-      border:none;
-      border-radius:0 0 3px 3px;
-      }
-    .menu-ui a:hover {
-      background:#f8f8f8;
-      color:#404040;
-      }
-    .menu-ui a.active,
-    .menu-ui a.active:hover {
-      background:#3887BE;
-      color:#FFF;
-      }
+  .menu-ui a:last-child {
+    border:none;
+    border-radius:0 0 3px 3px;
+    }
+  .menu-ui a:hover {
+    background:#f8f8f8;
+    color:#404040;
+    }
+  .menu-ui a.active,
+  .menu-ui a.active:hover {
+    background:#3887BE;
+    color:#FFF;
+    }
+  .search-ui {
+    position:absolute;
+    top:100px;
+    right:10px;
+    z-index:1000;
+    }
+
 </style>
 
 <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
@@ -63,6 +70,7 @@ body { margin:0; padding:0; }
 </nav>
 
   <div id="map"></div>
+  <input id='search' class='search-ui' placeholder='Restaurant name ' />
 
   <script>
     L.mapbox.accessToken = 'pk.eyJ1IjoicmVjb2xvZ3kiLCJhIjoiZWlta1B0WSJ9.u4w33vy6kkbvmPyGnObw7A';
@@ -456,7 +464,7 @@ body { margin:0; padding:0; }
               "marker-color": "#52E27E",
               "nosoy": true,
               "url": "http://laughingplanetcafe.com/",
-              "menu": "null",
+              "menu": "https://laughingplanetcafe.com/menu/",
               "notes": "tortillas, chips okay, haven't asked about cookies"
           }
       },
@@ -469,8 +477,151 @@ body { margin:0; padding:0; }
               "marker-color": "#52E27E",
               "nosoy": true,
               "url": "http://laughingplanetcafe.com/",
-              "menu": "null",
+              "menu": "https://laughingplanetcafe.com/menu/",
               "notes": "tortillas, chips okay, haven't asked about cookies"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -119.81680, 39.53724 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.68060, 45.51245 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.69501, 45.53075 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.72148, 45.47853 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.66354, 45.41689 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.80633, 45.52616 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.67564, 45.55029 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.61962, 45.53710 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -123.25917, 44.56472 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -123.09378, 44.02786 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -123.10577, 44.05150 ]},
+          "properties": {
+              "place": "Laughing Planet",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://laughingplanetcafe.com",
+              "menu": "https://laughingplanetcafe.com/menu/",
+              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
           }
       },
       {
@@ -1554,6 +1705,19 @@ body { margin:0; padding:0; }
       },
       {
         type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.67541, 45.54827 ]},
+          "properties": {
+              "place": "Por que no",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.porquenotacos.com/",
+              "menu": "http://www.porquenotacos.com/el_menu.pdf",
+              "notes": "no soy in cooking, not sure about flour tortillas"
+          }
+      },
+      {
+        type: "Feature",
           "geometry": { "type": "Point", "coordinates": [ -122.59901, 45.49079 ]},
           "properties": {
               "place": "Bar Maven",
@@ -1997,6 +2161,45 @@ body { margin:0; padding:0; }
       {
         type: "Feature",
           "geometry": { "type": "Point", "coordinates": [ -122.68511, 45.52693 ]},
+          "properties": {
+              "place": "Verde Cocina",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.verdecocinamarket.com/pearl-1/",
+              "menu": "http://static1.squarespace.com/static/55f9dabae4b05ad1323b0e3f/t/56048400e4b02fd3ee6abbd9/1443136535805/p_cena.pdf",
+              "notes": "(in the Pearl and food stand at PSU farmer’s market) - olive oil"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.67510, 45.55087 ]},
+          "properties": {
+              "place": "Verde Cocina",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.verdecocinamarket.com/pearl-1/",
+              "menu": "http://static1.squarespace.com/static/55f9dabae4b05ad1323b0e3f/t/56048400e4b02fd3ee6abbd9/1443136535805/p_cena.pdf",
+              "notes": "(in the Pearl and food stand at PSU farmer’s market) - olive oil"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.73438, 45.50973 ]},
+          "properties": {
+              "place": "Verde Cocina",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.verdecocinamarket.com/pearl-1/",
+              "menu": "http://static1.squarespace.com/static/55f9dabae4b05ad1323b0e3f/t/56048400e4b02fd3ee6abbd9/1443136535805/p_cena.pdf",
+              "notes": "(in the Pearl and food stand at PSU farmer’s market) - olive oil"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.69923, 45.47784 ]},
           "properties": {
               "place": "Verde Cocina",
               "marker-symbol": "restaurant",
@@ -4830,19 +5033,6 @@ body { margin:0; padding:0; }
       },
       {
         type: "Feature",
-          "geometry": { "type": "Point", "coordinates": [ -119.81680, 39.53724 ]},
-          "properties": {
-              "place": "Laughing Planet",
-              "marker-symbol": "restaurant",
-              "marker-color": "#52E27E",
-              "nosoy": true,
-              "url": "https://laughingplanetcafe.com",
-              "menu": "https://laughingplanetcafe.com/menu/",
-              "notes": "Cooking oil is not soy, tortillas contain soybean oil, chips ingredients are unknown"
-          }
-      },
-      {
-        type: "Feature",
           "geometry": { "type": "Point", "coordinates": [ -122.69649, 45.53403 ]},
           "properties": {
               "place": "Breakside Brewery",
@@ -5647,7 +5837,191 @@ body { margin:0; padding:0; }
               "notes": "Cooking oil is fine but I can't have pita."
           }
       },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.59570, 45.48907 ]},
+          "properties": {
+              "place": "Pieper Cafe",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://piepercafe.com/",
+              "menu": "http://piepercafe.com/",
+              "notes": "Cooking spray is canola oil (Pam) but it can change. The white bread is soybean oil free. Couldn't find bagel ingredients (blackmark bagels?) or ww bread ingredients."
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [  -90.10755, 29.92514 ]},
+          "properties": {
+              "place": "Upperline",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.upperline.com/",
+              "menu": "http://www.upperline.com/",
+              "notes": "Cooks with canola and olive oil blend, would need to ask specific questions about sauces and dressings but they do make aioli etc. in house."
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.59570, 45.48907 ]},
+          "properties": {
+              "place": "Saba",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "https://eatwithsaba.com/",
+              "menu": "https://eatwithsaba.com/menu/",
+              "notes": "All food is cooked with olive oil, but I can't have pita or kebabs (shishlik section of menu)"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.67594, 45.55041 ]},
+          "properties": {
+              "place": "Blue Star Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.bluestardonuts.com/",
+              "menu": "http://www.bluestardonuts.com/",
+              "notes": "oil is fine"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.59328, 45.58957 ]},
+          "properties": {
+              "place": "Blue Star Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.bluestardonuts.com/",
+              "menu": "http://www.bluestardonuts.com/",
+              "notes": "oil is fine"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.69890, 45.52975 ]},
+          "properties": {
+              "place": "Blue Star Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.bluestardonuts.com/",
+              "menu": "http://www.bluestardonuts.com/",
+              "notes": "oil is fine"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.68421, 45.52224 ]},
+          "properties": {
+              "place": "Blue Star Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.bluestardonuts.com/",
+              "menu": "http://www.bluestardonuts.com/",
+              "notes": "oil is fine"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.67115, 45.49656 ]},
+          "properties": {
+              "place": "Blue Star Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.bluestardonuts.com/",
+              "menu": "http://www.bluestardonuts.com/",
+              "notes": "oil is fine"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.63085, 45.50530 ]},
+          "properties": {
+              "place": "Blue Star Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.bluestardonuts.com/",
+              "menu": "http://www.bluestardonuts.com/",
+              "notes": "oil is fine"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.83055, 45.42961 ]},
+          "properties": {
+              "place": "Blue Star Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#52E27E",
+              "nosoy": true,
+              "url": "http://www.bluestardonuts.com/",
+              "menu": "http://www.bluestardonuts.com/",
+              "notes": "oil is fine"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [  -90.06887, 29.95560 ]},
+          "properties": {
+              "place": "GW Fins",
+              "marker-symbol": "restaurant",
+              "marker-color": "#5B72AF",
+              "nosoy": false,
+              "url": "https://gwfins.com/",
+              "menu": "https://gwfins.com/menus/dinner-menu/appetizers/",
+              "notes": "Uses soybean oil"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [  -90.13475, 29.94573 ]},
+          "properties": {
+              "place": "Brigsten's",
+              "marker-symbol": "restaurant",
+              "marker-color": "#5B72AF",
+              "nosoy": false,
+              "url": "http://www.brigtsens.com/",
+              "menu": "http://www.brigtsens.com/#menu",
+              "notes": "Uses soybean oil"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.68091, 45.52393 ]},
+          "properties": {
+              "place": "NOLA Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#5B72AF",
+              "nosoy": false,
+              "url": "http://www.noladoughnuts.com/",
+              "menu": "http://www.noladoughnuts.com/",
+              "notes": "Uses soybean oil"
+          }
+      },
+      {
+        type: "Feature",
+          "geometry": { "type": "Point", "coordinates": [ -122.66264, 45.41909 ]},
+          "properties": {
+              "place": "NOLA Donuts",
+              "marker-symbol": "restaurant",
+              "marker-color": "#5B72AF",
+              "nosoy": false,
+              "url": "http://www.noladoughnuts.com/",
+              "menu": "http://www.noladoughnuts.com/",
+              "notes": "Uses soybean oil"
+          }
+      },
     ];
+
+    $('#search').keyup(search);
 
     var markers = L.mapbox.featureLayer()
       .setGeoJSON(geojson)
@@ -5677,6 +6051,17 @@ body { margin:0; padding:0; }
       });
       return false;
     });
+
+    function search() {
+      // get the value of the search input field
+      var searchString = $('#search').val().toLowerCase();
+      markers.setFilter(showPlace);
+      function showPlace(feature) {
+        return feature.properties.place
+          .toLowerCase()
+          .indexOf(searchString) !== -1;
+      }
+    }
   </script>
 
 <script>
