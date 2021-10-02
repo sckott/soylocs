@@ -1,5 +1,5 @@
 library("gistr")
-library("geojsonio")
+# library("geojsonio")
 library("whisker")
 
 # read in data.csv
