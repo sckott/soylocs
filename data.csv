@@ -92,7 +92,7 @@
 "50 Licks","unknown",45.50351,-122.645024,"true","haven't asked about cones","http://www.fifty-licks.com/","http://www.fifty-licks.com/#!flavors/c24vq","#52E27E","restaurant"
 "Pastini","unknown",45.505125,-122.64482,"true","they have full allergen menu, so ask for it","http://www.pastini.com/locations/southeast-portland-italian-restaurant","http://www.pastini.com/menu/new-pastini-menu-portland","#52E27E","restaurant"
 "Biwa","unknown",45.52136,-122.656901,"true","Canola is only oil used (double check fryer oil), haven't asked about mayo","http://www.biwarestaurant.com/","http://www.biwarestaurant.com/biwadinnermenu/","#52E27E","restaurant"
-"Ford Food and Drink","unknown",45.504643,-122.655486,"true","partnered with Detour Cafe, so should be pretty much good with everything but ask to confirm specific items","http://www.fordfoodanddrink.com/","http://www.fordfoodanddrink.com/wp-content/uploads/2014/06/ffd-menu-revision-March-2014.pdf","#52E27E","restaurant"
+"Ford Food and Drink","unknown",45.504643,-122.655486,"true","PERMANENTLY CLOSED","null","null","#666666","danger"
 "Canopy","unknown",29.737371,-95.390691,"true","soy for frying, olive for sautee","http://www.canopyhouston.com/Canopy/","http://www.canopyhouston.com/Canopy/","#52E27E","restaurant"
 "Shade","unknown",29.802636,-95.401194,"true","All canola oil","http://www.shadeandcanopy.com/Shade/","http://www.shadeandcanopy.com/Shade/","#52E27E","restaurant"
 "Down House","unknown",29.802083,-95.399385,"true","Butter or olive oil for sautee, soy for frying","http://treadsack.com/downhouse/","http://treadsack.com/downhouse/menu/","#52E27E","restaurant"
@@ -152,12 +152,12 @@
 "Broder","unknown",45.503217,-122.640127,"true","no soy oil (not sure what it is)","http://www.broderpdx.com/","http://www.broderpdx.com/breakfast.php","#52E27E","restaurant"
 "Nel Centro","unknown",45.513969,-122.680684,"true","sauteeing oil is fine, pizza is no soy","http://www.nelcentro.com/","http://www.nelcentro.com/menus/","#52E27E","restaurant"
 "Veggie Grill","2016-01-25",45.517362,-122.678547,"true","vegan comfort food downtown, have a soy free menu","http://veggiegrill.com/","http://veggiegrill.com/menu/","#52E27E","restaurant"
-"Cacao","2016-01-25",45.522603,-122.683976,"true","hot chocolate is soy free","https://cacaodrinkchocolate.com/","null","#52E27E","restaurant"
+"Cacao","2016-01-25",45.522603,-122.683976,"true","PERMANENTLY CLOSED","null","null","#666666","danger"
 "RoboTaco","2016-01-25",45.517365,-122.659484,"true","(open late) - cooking is in canola oil, but flour tortillas have soy","http://www.robotacopdx.com/","http://www.robotacopdx.com/Content/menu.pdf","#52E27E","restaurant"
 "Samurai Blue","2016-01-25",45.55031,-122.6757,"true","canola oil for frying","http://www.samuraibluepdx.com/","http://www.samuraibluepdx.com/menu","#666666","danger"
 "Enat Kitchen","2016-01-25",45.562548,-122.66971,"true","canola","http://www.yelp.com/biz/enat-kitchen-portland","https://locu.com/places/enat-kitchen-portland-us/#menu","#52E27E","restaurant"
 "La Panza","2016-01-25",45.504978,-122.639881,"true","corn oil, corn tortillas are okay, Flour tortillas and sopaipilla have soybean oil","http://www.lapanzacafe.com/","http://www.lapanzacafe.com/#!menu/cfvg","#52E27E","restaurant"
-"Tiffin Asha","2018-09-27",45.562733,-122.647950,"true","rice bran for frying, coconut or sesame for saute","http://tiffinasha.com/","http://tiffinasha.com/menu/","#52E27E","restaurant"
+"Tiffin Asha","2018-09-27",45.562733,-122.647950,"true","rice bran for frying, coconut or sesame for saute","http://tiffinasha.com/","http://tiffinasha.com/menu/","#99","danger"
 "Thai Bloom Restaurant","2016-01-25",45.525334,-122.698608,"true","canola oil","https://www.thaibloomrestaurant.com/","https://www.thaibloomrestaurant.com/menu/","#52E27E","restaurant"
 "Verde Cocina","2016-01-25",45.526929,-122.685106,"true","(in the Pearl and food stand at PSU farmer’s market) - olive oil","http://www.verdecocinamarket.com/pearl-1/","http://static1.squarespace.com/static/55f9dabae4b05ad1323b0e3f/t/56048400e4b02fd3ee6abbd9/1443136535805/p_cena.pdf","#52E27E","restaurant"
 "Verde Cocina","2016-01-25",45.550867,-122.675097,"true","(in the Pearl and food stand at PSU farmer’s market) - olive oil","http://www.verdecocinamarket.com/pearl-1/","http://static1.squarespace.com/static/55f9dabae4b05ad1323b0e3f/t/56048400e4b02fd3ee6abbd9/1443136535805/p_cena.pdf","#52E27E","restaurant"
@@ -230,7 +230,7 @@
 "Teri Cafe","2016-05-16",33.181766,-117.293147,"true","sautee and deep fry is canola oil","http://www.tericafe.com/","http://www.tericafe.com/?cmd=content1","#52E27E","restaurant"
 "Barrel Republic","2016-05-16",33.196265,-117.380140,"false","everything is done with soybean oil (fry, sautee, dressings)","http://barrelrepublic.com/","http://barrelrepublic.com/oceanside-food-menu/","#5B72AF","restaurant"
 "Las Primas","2016-06-03",45.551939,-122.666985,"true","Dressings use canola oil. Saute - canola, Fry - soy","http://lasprimaskitchen.com/","http://lasprimaskitchen.com/menu/","#52E27E","restaurant"
-"Pok Pok","2016-06-06",45.504549,-122.632126,"true","Frying is soybean oil, stir-fry/saute is not soy but I don't know what","http://pokpokpdx.com/","http://pokpokpdx.com/main-menu/","#52E27E","restaurant"
+"Pok Pok","2016-06-06",45.504549,-122.632126,"true","PERMANENTLY CLOSED","null","null","#666666","danger"
 "Vita cafe","2016-07-02",45.559201,-122.634311,"true","Saute in canola, fry in soy","http://www.vita-cafe.com/","http://www.vita-cafe.com/menus/dinner/","#52E27E","restaurant"
 "Tin Shed","2016-07-02",45.558964,-122.650887,"false","All cooking in soy (fry and saute) unless special request to saute in butter or olive oil; Bread from Grand Central or New Cascadia (gluten free)","http://tinshedgardencafe.com/","http://tinshedgardencafe.com/#menu","#5B72AF","restaurant"
 "DarSalam","2016-07-02",45.559198,-122.635374,"false","Soybean oil to fry, and some other cooking. Olive oil in salad dressing and hummus, baba ganoush. Soybean oil is pretty prevalent and would be hard to avoid","http://darsalamportland.com/","http://alberta.darsalamportland.com/","#5B72AF","restaurant"
@@ -253,7 +253,7 @@
 "Sonny's Tavern","2016-10-11",43.194674,-70.875010,"true","sunflower oil to fry; oil for saute, salad, and mayo a blend containing soybean oil so need to special request soy-free dishes","http://www.sonnystaverndover.com/sonny-s-tavern-contact.html","http://www.sonnystaverndover.com/sonny-s-tavern-menu.html","#52E27E","restaurant"
 "BTU Brasserie","2016-12-12",45.542695,-122.602801,"true","All cooking oil (fry and saute) is canola oil. Sesame oil used for flavor.","http://btupdx.com","http://btupdx.com","#52E27E","restaurant"
 "Next Level Burger","2016-10-29",45.512355,-122.619641,"true","All cooking oil is canola. Buns do not contain soy. Mayo has soybean powder but is made with canola oil.","http://www.nextlevelburger.com/","http://www.nextlevelburger.com/menu-and-nutrition.html","#52E27E","restaurant"
-"Stella Taco","2017-06-26",45.504699,-122.634024,"true","Probably fine, she said they use Canola oil for sautee and fry, but then said they sometimes use PAM spray, use canola oil in tortillas, but seems unlikely them make them there. Flour tortillas are made with soy shortening","http://www.stellatacopdx.com/","http://www.stellatacopdx.com/menu/","#52E27E","restaurant"
+"Stella Taco","2017-06-26",45.504699,-122.634024,"true","PERMANENTLY CLOSED","null","null","#666666","danger"
 "Kati Portland","2017-01-03",45.504612,-122.635000,"false","Cooks everything in soybean oil, but can do coconut or olive oil for $2","https://www.facebook.com/katiportland/","https://www.facebook.com/katiportland/","#5B72AF","restaurant"
 "Papouli's Greek Food","2017-01-02",34.093158,-84.240760,"true","Peanut oil to fry, saute is meat drippings, dressing is with olive oil","http://papouliscafe.com/","http://papouliscafe.com/menus/","#52E27E","restaurant"
 "Taste of India","2017-01-03",34.093049,-84.240964,"false","Uses vegetable oil, presumably soy","http://tasteofindiaus.com/index.html","http://tasteofindiaus.com/menu.html","#5B72AF","restaurant"
@@ -281,7 +281,7 @@
 "BowPicker","2017-03-17",46.188790,-123.824657,"false","soy based vegetable oil","http://www.bowpicker.com/","http://www.bowpicker.com/","#5B72AF","bus"
 "Home Baking Co","2017-03-16",46.189557,-123.812432,"false","Uses a blend of butter and shortening (which contains soybean oil) in everything","https://www.yelp.com/biz/home-baking-co-astoria-2","https://www.yelp.com/biz/home-baking-co-astoria-2","#5B72AF","restaurant"
 "Buoy Brewing","2017-03-14",46.191330,-123.835072,"true","fry: rice oil; sautee: olive oil; gluten free bread no soy, Fressen bread has no soy. Ciabatta is almost always fine; Avoid mayo","https://www.buoybeer.com/","https://www.buoybeer.com/the-food/","#52E27E","restaurant"
-"Tiffin Asha","2017-04-22",45.562702,-122.648294,"true","Only use coconut oil, rice bran oil, and sesame oil","http://tiffinasha.com/","http://tiffinasha.com/menu/","#52E27E","restaurant"
+"Tiffin Asha","2017-04-22",45.562702,-122.648294,"true","Only use coconut oil, rice bran oil, and sesame oil","http://tiffinasha.com/","http://tiffinasha.com/menu/","#666666","restaurant"
 "Henry's Tavern","2017-04-20",39.744175,-104.991272,"true","Uses a canola/olive oil blend. This is probably for saute (not fry) so ask again when there. Same menu as Portland so I would think pizza is okay here too.","http://www.henrystavern.com/index.php?c=denver","http://www.henrystavern.com/menu.php?c=denver","#52E27E","restaurant"
 "Tott Asian Grill","2017-04-20",39.710469,-105.100998,"false","Uses soybean oil","http://www.tottasiangrilllakewoodco.com/","http://www.tottasiangrilllakewoodco.com/","#5B72AF","restaurant"
 "Himalaya House","2017-04-20",39.727100,-105.129429,"false","Uses soybean oil","http://www.himalaya-house.com/","http://www.himalaya-house.com/","#5B72AF","restaurant"
@@ -530,12 +530,6 @@
 "El Sancho Taco Shop","2020-10-12",44.053955,-121.301588,"true","Rice bran oil, grapeseed oil and olive oil; avoid anything with corn tortillas or chips/strips - they contained soybean oil as of mid/late 2019.","https://www.elsanchobend.com/","https://www.elsanchobend.com/","#52E27E","restaurant"
 "Big Ski's Pierogi","2020-10-12",44.051827,-121.314903,"true","I only cook with salted butter there are no oils in the dough,,, sour cream eggs water salt and flour in the dough","https://bigskispierogi.com/","https://bigskispierogi.com/","#52E27E","bus"
 "Bushel and a Peck bakeshop","2020-11-22",45.551009171937324,-122.66190441542858,"false","some pastries made with butter, including croissants. But the baking sheets are sprayed with soybean oil so it's a no-go",null,null,"#5B72AF","restaurant"
-
-
 "An Xuyên Bakery","2021-08-04",45.495128332376346,-122.60731278980754,"true","Ban Mi cooked with soybean oil. Bread has no oil. Many packaged goods all list ingredients","https://mng890.wixsite.com/an-xuyen-bakery/","null","#52E27E","restaurant"
 "The Hazel Room","2021-07-18",45.51222844008839,-122.63105172921708,"true","Cooking fat is either butter or olive oil. Biscuit fat is buttermilk.. would need to double check this.","https://www.thehazelroom.com/","null","#52E27E","restaurant"
 "Birdies Cafe","2020-10-16",44.06296572809414,-121.33741227007488,"true","PERMANENTLY CLOSED","null","null","#666666","danger"
-
-
-
-
